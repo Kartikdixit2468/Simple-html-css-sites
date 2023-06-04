@@ -1,0 +1,255 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+/* Custom scrollbar with CSS */
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background: #b2e9ff;
+}
+::-webkit-scrollbar-thumb {
+    background: #6e93f7;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4070f4;
+}
+/* Navbar styling */
+
+nav{
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 998;
+    transition: all 0.3s ease;
+    font-family: 'Ubuntu', sans-serif;
+}
+nav.sticky{
+    background: #4070f4;
+    padding: 13px 0;
+}
+nav .navbar{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+nav .navbar{
+    display: flex;
+    width: 90%;
+}
+nav .navbar .logo a{
+    font-size: 35px;
+    font-weight: 500;
+    color: rgb(20, 94, 233);
+}
+nav .navbar .menu{
+    display: flex;
+    position: relative;
+}
+nav.sticky .navbar .logo a{
+    font-weight: 500;
+    font-size: 35px;
+    color: #4070f4;
+}
+nav .navbar .menu li{
+    text-decoration: none;
+    margin: 0px 12px;
+}
+nav .navbar .menu a{
+    font-size: 18px;
+    font-weight: 400;
+    color: #0E2431;
+    padding: 6px 0;
+    transition: all 0.4s ease;
+}
+.navbar .menu a:hover{
+    color: #6e93f7;
+}
+.navbar .media-icons a{
+    color: #4070f4;
+    font-size: 18px;
+    margin: 0 6px;
+}
+nav.sticky .navbar .media-icons a{
+    color: #fff;
+}
+/* Side Navigation Menu Button CSS */
+
+nav .menu-btn,
+nav .navbar .menu .cancel-btn{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    right: 30px;
+    top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: none;
+}
+nav .menu-btn{
+    color: #4070f4;
+}
+nav.sticky .menu-btn{
+    color: #fff;
+}
+.navbar .menu .menu-btn{
+    color: #fff;
+}
+/* Home section styling */
+.home{
+    height: 100vh;
+    width: 100%;
+    background-image: url('images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .home-content{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text-one{
+    font-size: 25px;
+    color: black;
+}
+.text-two{
+    font-size: 80px;
+    color: black;
+    font-weight: 600;
+}
+.text-three{
+    color: #4070f4;
+    font-size: 40px;
+}
+.text-four{
+    color: black;
+    font-size: 22px;
+}
+.home .button{
+    margin: 14px 0px;
+}
+.button button{
+    font-size: x-large;
+    padding: 8px 16px;
+    background-color: #4070f4;
+    border-radius: 5px;
+    border: 0px;
+    color: #fff;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+
+}
+.button button:hover{
+    background: none;
+    color: #4070f4;
+    border: 2px solid #4070f4;
+    transition: all 1.5s ease;
+}
+/* About Section Styling */
+
+section{
+    padding-top: 40px;
+}
+section .content{
+    width: 80%;
+    margin: 40px auto;
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section .title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+section .title span{
+    color: #000000;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+}
+section .title span::after,
+section .title span::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 3px;
+    width: 100%;
+    background-color: #4070f4;
+}
+section .title span::after{
+    bottom: -7px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about .about-content .about-details .left{
+    width: 45%;
+}
+.about img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.about .about-content .about-details .right{
+    width: 55%;
+}
+section  .topic{
+    color: #0E2431;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.about-details .right p{
+    text-align: justify;
+    box-sizing: border-box;
+    display: block;
+}
+section .button{
+    margin: 16px 0;
+}
+section .button button{
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 25px;
+    font-weight: 400;
+    background: #4070f4;
+    color: #fff;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+section .button button:hover{
+    border-color: #4070f4;
+    background-color: rgb(244, 248, 252);
+    color: #4070f4;
+}
